@@ -10,8 +10,8 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/BylbaCon
 
 # Comands
 help - get list of comands
-theme (color1) (color2) (color3) (degrees of rotate gradient) - change theme
-comand (coamnd) - execute default comand from console (F12)
+theme (colors) - change theme
+comand (comand) - execute default comand from console (F12)
 history - get history of comands
 
 # Screenshot
@@ -30,9 +30,9 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/BylbaCon
 
 # Команды
 help - получить список команд
-theme (цвет1) (цвет2) (цвет3) (градусы поворота градиента) - сменить тему
-comand (coamnd) - выполнить обычную команду консоли (F12)
-history - получить историю команд
+theme (цвета) - поменять тему
+comand (команда) - выполнить обычную команду из консоли (F12)
+history - получить список команд
 
 # Скриншоты
 
