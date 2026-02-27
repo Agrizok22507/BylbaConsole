@@ -14,6 +14,10 @@ theme (color1) (color2) (color3) (degrees of rotate gradient) - change theme
 comand (coamnd) - execute default comand from console (F12)
 history - get history of comands
 
+# Screenshot
+
+![Screenshot](screenshot.png)
+
 
 # RU 🇷🇺
 Консоль с командами для сайтов
@@ -29,3 +33,8 @@ help - получить список команд
 theme (цвет1) (цвет2) (цвет3) (градусы поворота градиента) - сменить тему
 comand (coamnd) - выполнить обычную команду консоли (F12)
 history - получить историю команд
+
+# Скриншоты
+
+![Скриншот](screenshot.png)
+
