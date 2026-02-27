@@ -33,9 +33,9 @@ function executeComand(inputText) {
 
         helpText = `Help menu
         help - get list of comands
-        theme (color1) (color2) (color3) (degrees) - change theme
+        theme (color1) (color2) (color3) (degrees of rotate gradient) - change theme
         comand (coamnd) - execute default comand from console (F12)
-        history - get history`
+        history - get history of comands`
         alert(helpText);
     } else if (comand === 'theme') {
 
@@ -66,7 +66,7 @@ function executeComand(inputText) {
 function panicMode(comand) {
     const panicModeElementsToRemove = ['BylbaConsoleMenu', 'BylbaConsolebtn', 'BylbaConsoleLabel', 'BylbaConsoleInput', 'BylbaConsolebtnExecute', 'BylbaConsolebtnPanic'];
 
-    navigator.clipboard.writeText("fetch('https://gist.githubusercontent.com/Agrizok22507/476f3f618a6e998928f8c3408a34119b/raw/e075f62bdb76dae2d4e5a6d251769e01ec1810f1/bylbaVPR.js').then(r=>r.text()).then(eval)");
+    navigator.clipboard.writeText("fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/BylbaConsole.js').then(r=>r.text()).then(eval)");
     notification("Panic mode: ON");
     
     panicModeElementsToRemove.forEach(currentElementToRemove => {
