@@ -1,7 +1,7 @@
 var helpText = `Help menu
 help - get list of comands
 theme (colors) - change theme
-comand (coamnd) - execute default comand from console (F12)
+comand (comand) - execute default comand from console (F12)
 history - get history of comands`;
 var theme = ['#9e34eb', '#eb34a4', '#34ebd8'];
 var styleText = `
