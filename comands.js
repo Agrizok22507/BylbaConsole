@@ -22,7 +22,7 @@ function setTheme(color1, color2, color3) {
         }
         `
 
-        const elementsWithBorder = ['BylbaConsoleMenu', 'BylbaConsolebtn', 'BylbaConsoleLabel', 'BylbaConsolebtnExecute', 'BylbaConsolebtnPanic', 'BylbaConsolebtnCopy', 'BylbaConsolebtnPaste', 'BylbaConsolebtnClear'];
+        const elementsWithBorder = ['BylbaConsoleMenu', 'BylbaConsolebtn', 'BylbaConsolebtnExecute', 'BylbaConsolebtnPanic', 'BylbaConsolebtnCopy', 'BylbaConsolebtnPaste', 'BylbaConsolebtnClear'];
         elementsWithBorder.forEach(currentElementForToChangeBorder=>{
             var element = document.getElementById(currentElementForToChangeBorder);
             element.style.border = color1;
