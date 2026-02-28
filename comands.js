@@ -57,7 +57,7 @@ function execute(comand) {
 
 function findElements(signs, action) {
     const script = document.createElement('script');
-    script.textContent = `document.querySelectorAll('${signs}').forEach(element=>{elemet${action}});`;
+    script.textContent = `document.querySelectorAll('${signs}').forEach(element=>{element${action}});`;
     document.head.appendChild(script);
 }
 
