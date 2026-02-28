@@ -9,11 +9,18 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/main.js'
 ```
 
 # Comands
-Help menu
 getHelp() - get list of comands
-setTheme('color1', 'color2', 'color3') - change theme
-execute('comand') - execute default comand from console (F12)
+
 getHistory() - get history of comands
+
+setTheme('color1', 'color2', 'color3') - change theme
+
+execute('comand') - execute default comand from console (F12)
+
+findElements('signs', 'action') - find elements by sign and do action
+
+findElement('signs', 'action') - find element by sign and do action
+
 
 # Screenshot
 
@@ -31,11 +38,17 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/main.js'
 
 # Команды
 getHelp() - получить список команд
+
 setTheme('цвет1', 'цвет2', 'цвет3') - поменять тему
+
 execute(команда) - выполнить обычную команду из консоли (F12)
+
 getHistory() - получить список команд
+
+findElements('признаки', 'действие') - найти элементы по признакам и сделать действия
+
+findElement('признаки', 'действие') - найти элемент по признакам и сделать действия
 
 # Скриншоты
 
 ![Скриншот](screenshot.png)
-
