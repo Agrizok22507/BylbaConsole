@@ -11,10 +11,10 @@ function executeComand(inputText) {
 }
 
 function panicMode() {
-    navigator.clipboard.writeText("fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/BylbaConsole.js').then(r=>r.text()).then(eval)");
+    navigator.clipboard.writeText("fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/main.js').then(r=>r.text()).then(eval)");
     
     var elementsToRemove = ['BylbaConsoleMenu', 'BylbaConsolebtn', 'BylbaConsoleLabel', 'BylbaConsoleInput', 'BylbaConsolebtnExecute', 'BylbaConsolebtnPanic', 'BylbaConsolebtnCopy', 'BylbaConsolebtnPaste', 'BylbaConsolebtnClear'];
     elementsToRemove.forEach(currentElementToRemove => {document.getElementById(currentElementToRemove)?.remove();});
-    
+
     notification("Panic mode: ON");
 }
