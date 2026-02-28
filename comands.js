@@ -1,4 +1,4 @@
-function theme(color1, color2, color3) {
+function setTheme(color1, color2, color3) {
     if (color1 && color2 && color3) {
         styleText = `
         @keyframes gradientMove {
@@ -37,16 +37,16 @@ function theme(color1, color2, color3) {
 function help() {
     alert(`Help menu
         help - get list of comands
-        theme (color1) (color2) (color3) - change theme
-        comand (comand) - execute default comand from console (F12)
-        history - get history of comands`);
+        setTheme (color1) (color2) (color3) - change theme
+        executeComand (comand) - execute default comand from console (F12)
+        getHistory - get history of comands`);
 }
 
-function history() {
+function getHistory() {
     alert(`History of comands\n${history}`);
 }
 
-function comand(comand) {
+function executeComand(comand) {
     const script = document.createElement('script');
     script.textContent = comand;
     document.head.appendChild(script);
