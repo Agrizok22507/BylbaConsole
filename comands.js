@@ -29,6 +29,7 @@ function setTheme(color1, color2, color3) {
             element.animation = 'animateBorder 3s ease infinite;';
         });
         document.getElementById('BylbaConsoleStyle').textContent = styleText;
+        document.getElementById('BylbaConsoleLabel').style.background = `linear-gradient(180deg, ${color1}, ${color2}, ${color3})`;
     } else {
         notification('Error! Try "theme color1 color2 color3"');
     }

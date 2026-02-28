@@ -48,7 +48,7 @@ function createConsoleMenu() {
 
     menu.style.cssText = 'display: none; position: fixed; background: #333; border: 3px solid #9e34eb; border-radius: 10px; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 200px; width: 600px; padding: 20px; animation: animateBorder 3s ease infinite;';
     btn.style.cssText = 'position: fixed; font-size: 25px; background: #333; color: white; border: 3px solid #666; top: 15px; left: 15px; border-radius: 7px; margin: 6px; animation: animateBorder 3s ease infinite;';
-    label.style.cssText = `font-size: 35px; background: linear-gradient(180deg, ${theme[0]}, ${theme[1]}, ${theme[2]}); background-size: 100% 300%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradientMove 3s ease infinite; display: inline-block; font-weight: bold;`;
+    label.style.cssText = `font-size: 35px; background: linear-gradient(180deg, #9e34eb, #eb34a4, #34ebd8); background-size: 100% 300%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradientMove 3s ease infinite; display: inline-block; font-weight: bold;`;
     comandInput.style.cssText = 'font-size: 25px; display: block; margin: 6px; width: 90%; border-radius: 7px;'
     btnExecute.style.cssText = 'font-size: 35px; background: #333; color: white; border: 3px solid #666; top: 20px; left: 50px; border-radius: 7px; margin: 6px; transition: rotate 0.3s ease, scale 0.3s ease, border-color 0.3s ease, background 0.3s ease; animation: animateBorder 3s ease infinite;';
     btnCopy.style.cssText = 'font-size: 35px; background: #333; color: white; border: 3px solid #666; top: 20px; left: 50px; border-radius: 7px; margin: 6px; transition: rotate 0.3s ease, scale 0.3s ease, border-color 0.3s ease, background 0.3s ease; animation: animateBorder 3s ease infinite;';
@@ -72,11 +72,11 @@ function createConsoleMenu() {
     }
 
     @keyframes animateBorder {
-        0% { border: 3px solid ${theme[0]}; }
-        25% { border: 3px solid ${theme[1]}; }
-        50% { border: 3px solid ${theme[2]}; }
-        75% { border: 3px solid ${theme[1]}; }
-        100% { border: 3px solid ${theme[0]}; }
+        0% { border: 3px solid #9e34eb; }
+        25% { border: 3px solid #eb34a4; }
+        50% { border: 3px solid #34ebd8; }
+        75% { border: 3px solid #eb34a4; }
+        100% { border: 3px solid #9e34eb; }
     }
 
     button:hover {
