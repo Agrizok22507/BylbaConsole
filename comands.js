@@ -29,7 +29,7 @@ function setTheme(color1, color2, color3) {
             element.animation = 'animateBorder 3s ease infinite;';
         });
         document.getElementById('BylbaConsoleStyle').textContent = styleText;
-        document.getElementById('BylbaConsoleLabel').style.background = `linear-gradient(180deg, ${color1}, ${color2}, ${color3})`;
+        document.getElementById('BylbaConsoleLabel').style.cssText = `font-size: 35px; background: linear-gradient(180deg, ${color1}, ${color2}, ${color3}); background-size: 100% 300%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradientMove 3s ease infinite; display: inline-block; font-weight: bold;`;
     } else {
         notification('Error! Try "theme color1 color2 color3"');
     }
