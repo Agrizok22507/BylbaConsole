@@ -25,7 +25,7 @@ function setTheme(color1, color2, color3) {
         const elementsWithBorder = ['BylbaConsoleMenu', 'BylbaConsolebtn', 'BylbaConsoleLabel', 'BylbaConsolebtnExecute', 'BylbaConsolebtnPanic', 'BylbaConsolebtnCopy', 'BylbaConsolebtnPaste', 'BylbaConsolebtnClear'];
         elementsWithBorder.forEach(currentElementForToChangeBorder=>{
             var element = document.getElementById(currentElementForToChangeBorder);
-            element.style.border = theme[0];
+            element.style.border = color1;
             element.animation = 'animateBorder 3s ease infinite;';
         });
         document.getElementById('BylbaConsoleStyle').textContent = styleText;
@@ -34,11 +34,11 @@ function setTheme(color1, color2, color3) {
     }
 }
 
-function help() {
+function getHelp() {
     alert(`Help menu
-        help - get list of comands
-        setTheme (color1) (color2) (color3) - change theme
-        executeComand (comand) - execute default comand from console (F12)
+        getHelp - get list of comands
+        setTheme('color1', 'color2', 'color3') - change theme
+        execute('comand') - execute default comand from console (F12)
         getHistory - get history of comands`);
 }
 
@@ -46,7 +46,7 @@ function getHistory() {
     alert(`History of comands\n${history}`);
 }
 
-function executeComand(comand) {
+function execute(comand) {
     const script = document.createElement('script');
     script.textContent = comand;
     document.head.appendChild(script);

@@ -14,7 +14,13 @@ async function main() {
         await appendScript('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/gui.js');
         await appendScript('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/execute.js');
         await appendScript('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/comands.js');
-        createConsoleMenu();
+        setTimeout(() => {
+            if (typeof createConsoleMenu === 'function') {
+                createConsoleMenu();
+            } else {
+                console.error('createConsoleMenu not found');
+            }
+        }, 50);
     } catch {
         alert("Error with loading scripts")
     }

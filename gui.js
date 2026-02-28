@@ -86,16 +86,13 @@ function createConsoleMenu() {
     }
     `;
 
-    comandInput.placeholder = 'Your comand (write "help" to get list of comands)';
+    comandInput.placeholder = 'Your comand (write "getHelp" to get list of comands)';
 
     btn.onclick=()=>toggleConsoleMenu()
     btnExecute.onclick=()=>executeComand(document.getElementById('BylbaConsoleInput').value)
     btnCopy.onclick=()=>navigator.clipboard.writeText(document.getElementById('BylbaConsoleInput').value);notification('Comand successfully copied');
     btnPaste.onclick=()=>navigator.clipboard.readText().then(text => {document.getElementById('BylbaConsoleInput').value = text;notification('Comand successfully pasted')})
-    btnClear.onclick=()=>{
-        document.getElementById('BylbaConsoleInput').value = '';
-        notification('Input successfully cleared');
-    }
+    btnClear.onclick=()=>document.getElementById('BylbaConsoleInput').value = '';
     btnPanic.onclick=()=>panicMode()
 
     fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/background.jpg').then(r=>r.blob()).then(b=>{
