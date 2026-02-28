@@ -10,10 +10,10 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/main.js'
 
 # Comands
 Help menu
-getHelp - get list of comands
+getHelp() - get list of comands
 setTheme('color1', 'color2', 'color3') - change theme
 execute('comand') - execute default comand from console (F12)
-getHistory - get history of comands
+getHistory() - get history of comands
 
 # Screenshot
 
@@ -30,10 +30,10 @@ fetch('https://raw.githubusercontent.com/Agrizok22507/BylbaConsole/main/main.js'
 ```
 
 # Команды
-getHelp - получить список команд
+getHelp() - получить список команд
 setTheme('цвет1', 'цвет2', 'цвет3') - поменять тему
 execute(команда) - выполнить обычную команду из консоли (F12)
-getHistory - получить список команд
+getHistory() - получить список команд
 
 # Скриншоты
 
