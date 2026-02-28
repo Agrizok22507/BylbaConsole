@@ -37,10 +37,12 @@ function setTheme(color1, color2, color3) {
 
 function getHelp() {
     alert(`Help menu
-        getHelp - get list of comands
+        getHelp() - get list of comands
+        getHistory() - get history of comands
         setTheme('color1', 'color2', 'color3') - change theme
         execute('comand') - execute default comand from console (F12)
-        getHistory - get history of comands`);
+        findElements('signs', 'action') - find elements by sign and do action
+        findElement('signs', 'action') - find element by sign and do action`);
 }
 
 function getHistory() {
@@ -50,5 +52,17 @@ function getHistory() {
 function execute(comand) {
     const script = document.createElement('script');
     script.textContent = comand;
+    document.head.appendChild(script);
+}
+
+function findElements(signs, action) {
+    const script = document.createElement('script');
+    script.textContent = `document.querySelectorAll(${signs}).forEach(element=>{elemet${action}});`;
+    document.head.appendChild(script);
+}
+
+function findElement(signs, action) {
+    const script = document.createElement('script');
+    script.textContent = `document.querySelector(${signs}).${action};`;
     document.head.appendChild(script);
 }
