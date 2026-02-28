@@ -57,12 +57,12 @@ function execute(comand) {
 
 function findElements(signs, action) {
     const script = document.createElement('script');
-    script.textContent = `document.querySelectorAll(${signs}).forEach(element=>{elemet${action}});`;
+    script.textContent = `document.querySelectorAll('${signs}').forEach(element=>{elemet${action}});`;
     document.head.appendChild(script);
 }
 
 function findElement(signs, action) {
     const script = document.createElement('script');
-    script.textContent = `document.querySelector(${signs}).${action};`;
+    script.textContent = `document.querySelector('${signs}').${action};`;
     document.head.appendChild(script);
 }
